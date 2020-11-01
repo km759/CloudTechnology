@@ -74,26 +74,56 @@
                     <h2>Step 1</h2>
                     -Install Docker from <a href="https://www.docker.com/get-started">here</a>, once installed open docker and run the command <b>"docker run hello-world"</b>
                 </br>
+
+                 <div class="image">
+                    <img src="1.png">
+                 </div>
+
                 <br>
                     <h2>Step 2</h2>
                     -Pull an Ubuntu image from Dockerhub. After completing step one run the following command in your command line <b>"docker pull ubuntu"</b>, then use the command <b>"docker images</b> to check the existing images on your computer.
                 </br>
+
+                <div class="image">
+                    <img src="2.png">
+                </div>
+
                 <br>
                     <h2>Step 3</h2>
                     -How to commit changes to a docker images. Run the following commands: <b>"docker run -it ubuntu:latest /bin/bash</b>, then install applications in this container with the following command: <b>"apt-get update"</b>. Install apache2 using <b>"apt-get install apache2"</b>, once is apache is installed install vim text editor using the following command <b>"apt-get install vim"</b>. Exit the Ubuntu container with the <b>"exit"</b> command. Check the container using <b>"docker ps -a"</b> and create a new Docker image using the following command: <b>"docker commit (your root id from the container that we were on) ubuntu-my_apache2(this is the name of the file)"</b>. Check to make sure your image is there <b>"docker images"</b>
                 </br>
+
+                <div class="image">
+                    <img src="3.png">
+                </div>
+
                 <br>
                     <h2>Step 4</h2>
-            -How to share data between Docker container and host. Use the following command <b>"docker run -it -p 127.0.0.1:80:80 -v (the folder where you have your docker files)"</b>
+                     -How to share data between Docker container and host. Use the following command <b>"docker run -it -p 127.0.0.1:80:80 -v (the folder where you have your docker files)"</b>
                 </br>
+
+                <div class="image">
+                    <img src="4.png">
+                </div>
+
                 <br>
                     <h2>Step 5</h2>
                     -Vi editor in unix. Check the preset working directory using <b>"pwd"</b>, then use the following command <b>"cd /var/www/html"</b>. Once you are in that directory crease an index.html file using the command <b>"vi index.html"</b>, press the key <b>"i"</b> on your keyboard to edit your new index.html file. If you see the <b>"--INSERT --"</b> it means that you can type html source code now. Type the commands shown in the pictures, once you are done press the key <b>"ESC"</b> on your keyboard and then type <b>":wq"</b>. Make sure you can find the file index.html in your directory where you added your file.
                 </br>
+
+                <div class="image">
+                    <img src="5.png">
+                </div>
+
                 <br>
                     <h2>Step 6</h2>
                     -How to use Docker to host a website. Start apache service using the following command: <b>/etc/init.d/apache2 restart"</b> in your docker container. Use any browser from your host computer and type the following IP in order to visit your website: <b>"127.0.0.1"</b>
                 </br>
+
+                <div class="image">
+                    <img src="6.png">
+                </div>
+
                 <br>
                     Congratulations! You made you made your website work with Docker!
                 </br>
@@ -113,12 +143,6 @@
                     <li class="list-group-item">Tutorial</li>
                 </ul>
             </div>
-            <br>
-            <div class="image">
-                <img src="HTTP.png">
-                <p>Test</p>
-            </div>
-            </br>
         </div>
     </div>
 </div>
